@@ -316,7 +316,6 @@ svg{
     }
     .background {
         overflow: hidden;
-        display: none;
     }
     .bg-glassmorphism{
         background: none;
