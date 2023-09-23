@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get started</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/custom.css">
+
+</head>
+<body class="bg-dark-blue main-body">
+
+  <div class="background">
+    <span></span>
+    <span></span>
+  </div>
+        <!-- Nav bar -->
+        <div class="container">
+          <header class="d-none d-lg-flex flex-wrap justify-content-center py-3">
+            <a href="/" class="d-flex align-items-center mb-md-0 me-md-auto text-decoration-none text-light fw-bold fs-4">
+              get<span class="text-dark-pink">Linked</span>
+            </a>
+      
+            <ul class="nav nav-pills"">
+              <li class="nav-item"><a href="#" class="nav-link text-light">Timeline</a></li>
+              <li class="nav-item"><a href="#" class="nav-link text-light">Overview</a></li>
+              <li class="nav-item"><a href="#" class="nav-link text-light">FAQs</a></li>
+              <li class="nav-item"><a href="../Pages/contact.html" class="nav-link text-gradient fw-bold">Contact</a></li>
+            </ul>
+
+            
+            <div class="col-md-2 text-end">
+              <button type="button" class="btn btn-outline-gradient me-2 px-5">Register</button>
+            </div>
+          </header>
+        </div>
+        <!-- End of Nav Bar -->
+
+        <!-- Small Screen Nav Bar -->
+        <header class="bg-dark-blue border-bottom d-block d-lg-none position-sticky fixed-top">
+          <div class="collapse" id="navbarHeader">
+            <div class="container border-bottom">
+              <div class="row">
+                <div class="col-sm-4 offset-md-1 py-4">
+                  <h4 class="text-white fw-bold">get<span class="text-dark-pink">Linked</span></h4>
+                  <ul class="list-unstyled">
+                    <li><a href="#" class="text-white text-decoration-none">Timeline</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Overview</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">FAQ's</a></li>
+                    <li><a href="../Pages/contact.html" class="text-white text-decoration-none">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="navbar">
+            <div class="container">
+              <a href="#" class="navbar-brand d-flex align-items-center">
+                <strong class="d-flex d-lg-none text-dark-pink ms-2 ps-4 fw-bold">Register</strong>
+              </a>
+              <button class="navbar-toggler btn-gradient" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+          </div>
+        </header>
+        <!-- End of Snall Screen Nav Bar -->
+
+        <!-- Sign up Section -->
+        <div class="d-flex align-items-center justify-content-center">
+          <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center">
+            
+            <!-- Image Container -->
+            <div class="col-lg-6">
+              <img src="../images/RegisterPageImages/3d-graphic-designer-showing-thumbs-up-png 1.svg" class="d-block img-fluid mx-auto" style="width: 90%;" alt="">
+            </div>
+
+            <!-- Registeration Form -->
+            <div class="col-lg-6">
+              <form class="bg-glassmorphism p-5" id="registerationForm">
+                <h4 class="d-none d-lg-flex text-dark-pink">Register</h4>
+                <p class="text-white">Be part of this movement! <span class="fw-bold text-dark-pink">..............</span></p>
+                <img src="../images/RegisterPageImages/girl-walking.svg" class="girl-walking" alt="">
+                <img src="../images/RegisterPageImages/boy-walking.svg" class="boy-walking" alt="">
+                <p class="fs-3 text-white text-uppercase">Create Your Account</p>
+
+                <div class="row g-3 mb-4">
+                  <div class="col-12 col-lg-6">
+                    <label for="teamName" class="text-white">Team's Name</label>
+                    <input type="text" id="teamName" class="form-control input-field" placeholder="Enter the name of your group" aria-label="Team Name">
+                  </div>
+                  <div class="col-12 col-lg-6">
+                    <label for="phone" class="text-white">Phone</label>
+                    <input type="tel" id="phone" class="form-control input-field" placeholder="Enter your phone number" aria-label="Phone number">
+                  </div>
+                </div>
+                
+                <div class="row g-3 mb-4">
+                  <div class="col-12 col-lg-6">
+                    <label for="email" class="text-white">Email</label>
+                    <input type="email" id="email" class="form-control input-field" placeholder="Enter your email address" aria-label="email">
+                  </div>
+                  <div class="col-12 col-lg-6">
+                    <label for="projectTopic" class="text-white">Project Topic</label>
+                    <input type="text" id="projectTopic" class="form-control input-field" placeholder="What is your group project topic" aria-label="Project Topic">
+                  </div>
+                </div>
+
+                <div class="row g-3 mb-4">
+                  <div class="col-7 col-lg-6">
+                    <label for="categorySelect" class="text-white">Category</label>
+                    <select class="form-select input-select" id="category" aria-label="Default select example">
+                      <option selected>Select the category</option>
+                    </select>
+                  </div>
+                  <div class="col-5 col-lg-6">
+                    <label for="groupNumber" class="text-white">Group Size</label>
+                    <select class="form-select input-select" id="groupSize" aria-label="Default select example">
+                      <option selected>Select</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                      <option value="4">Four</option>
+                      <option value="5">Five</option>
+                    </select>
+                  </div>
+                </div>
+
+                <small class="text-dark-pink small">Please review your Registeration details before submitting</small>
+                <div class="checkbox mb-3 col-12">
+                  <label>
+                    <input type="checkbox" value="agreement" id="agreement">
+                    <label for="agreement" class="text-white">I agreed with the event terms and conditions and privacy policy</label>
+                  </label>
+                </div>
+                <button class="w-100 btn btn-gradient" id="registerationFormButton" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Register now</button>
+              </form>
+              <!-- End of Registeration Form -->
+            </div>
+          </div>
+        </div>
+        <!-- End of Sign up Section -->
+
+        <!-- Background Textures (stars) -->
+        <img src="../images/RegisterPageImages/star.svg" class="grey-star-1" alt="">
+        <img src="../images/RegisterPageImages/sata gra.svg" class="purple-star-1" alt="">
+        <img src="../images/RegisterPageImages/star (1).svg" class="white-star" alt="">
+        <img src="../images/RegisterPageImages/star.svg" class="grey-star-2" alt="">
+        <img src="../images/RegisterPageImages/sata gra.svg" class="purple-star-2" alt="">
+        <!-- End of Background Textures -->
+
+        <!-- Modal Section -->
+        <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <img src="../images/RegisterPageImages/star.svg" class="modal-star-1" alt="">
+            <div class="modal-content border-gradient">
+              <div class="modal-body">
+                <div class="d-flex align-items-center justify-content-center">
+                  <img src="../images/RegisterPageImages/green-check.svg" class="d-block img-fluid green-check" alt="">
+                  <img src="../images/RegisterPageImages/success-man.svg" class="d-block img-fluid success-man" alt="">
+                </div>
+                <div class="text-center">
+                  <h3 class="">Congratulations you have successfully Registered</h3>
+                  <p>Yes, it was easy and you did it!</p>
+                  <p>Check your mail box for next step &#128521; </p>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-gradient w-100" data-bs-dismiss="modal">Back</button>
+              </div>
+            </div>
+            <img src="../images/RegisterPageImages/sata gra.svg" class="modal-star-3" alt="">
+          </div>
+        </div>
+        <!-- End of Modal Section -->
+
+        <!-- Bootstrap -->
+        <script src="../JS/bootstrap.min.js"></script>
+
+        <!-- Custom JavaScript -->
+        <script src="../JS/main.js"></script>
+</body>
+</html>

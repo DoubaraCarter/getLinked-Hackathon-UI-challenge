@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* Custom Colors */
+:root{
+    --indigo: #903AFF;
+    --dark-pink: #D434F3;
+    --dark-blue: #150E28;
+    --primary-color: linear-gradient(to right, #f62381, #903AFF);
+}
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.custom-border-bottom{
+    border-bottom: 1px solid #636363;
+}
+.custom-border-top{
+    border-top: 1px solid #636363;
+}
+/* ======================== Landing Page Section =================== */
+/* Hero Section */
+.hero-section{
+    height: 89vh;
+    width: 100%;
+}
+.image-container{
+    position: relative;
+}
+.hero-image-1{
+    position: absolute;
+    width: 80%;
+    left: 30px;
+}
+.hero-image-2{
+    width: 100%;
+}
+.bulb-svg{
+    width: 40px;
+    position: absolute;
+    left: 58%;
+    top: 12%;
+}
+svg{
+    transform: rotate(180deg);
+    position: absolute;
+    bottom: 89%;
+    left: 47%;
+}
+/* Big Idea Section */
+.big-idea{
+    background-image: url(../images/the\ big\ idea\ 1.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 480px;
+}
+/* Judging Criteria Section */
+.circle{
+    position: absolute;
+    left: 15%;
+    top: 5%;
+    z-index: -1;
+    width: 125px;
+    height: 125px;
+    background: var(--primary-color);
+    border-radius: 50%;
+}
+.circle-2{
+    position: absolute;
+    left: 63%;
+    top: 15%;
+    z-index: -1;
+    width: 125px;
+    height: 125px;
+    background: var(--primary-color);
+    border-radius: 50%;
+}
+/* FAQ Section */
+.custom-accordian{
+    background-color: transparent;
+    color: white;
+}
+.custom-accordian::after{
+    content: '+';
+    float: right;
+    font-size: 25px;
+}
+.custom-accordian-border-bottom{
+    border-bottom: 1px solid #D434F3;
+}
+.quest-1{
+    position: absolute;
+    top: 2%;
+    left: 41%;
+    width: 50px;
+}
+.quest-2{
+    position: absolute;
+    top: 8%;
+    left: 25%;
+    width: 40px;
+}
+.quest-3{
+    position: absolute;
+    top: 8%;
+    left: 60%;
+    width: 40px;
+}
+/* Timeline Section */
+
+/* Policy Section */
+.policy-list li{
+    list-style-image: url(../images/green-check.svg);
+    font-size: 13px;
+    vertical-align: middle;
+    line-height: 1.5;
+}
+.safe-svg{
+    /* position: absolute; */
+    width: 70%;
+}
+.unlock-svg{
+    position: absolute;
+    top: 13%;
+    right: 15%;
+    width: 80%;
+}
+
+/* ======================================================== */
+/* Background */
+.main-body{
+    overflow: hidden;
+
+}
+.background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: var(--dark-blue);
+    overflow: hidden;
+    z-index: -1;
+}
+
+.background span {
+    width: 80vmin;
+    height: 80vmin;
+    border-radius: 80vmin;
+    backface-visibility: hidden;
+    position: absolute;
+}
+.background span:nth-child(1) {
+    color: #8f3aff50;
+    top: 50%;
+    left: 20%;
+    transform-origin: -8vw -22vh;
+    box-shadow: 100vmin 0 13.144144770321944vmin currentColor;
+}
+.background span:nth-child(2) {
+    width: 70vmin;
+    height: 65vmin;
+    color: #8f3aff4f;
+    top: 13%;
+    left: 35%;
+    transform-origin: -8vw -22vh;
+    box-shadow: -100vmin 0 13.23001889700647vmin currentColor;
+}
+
+/* Components */
+.text-indigo{
+    color: var(--indigo);
+}
+.text-dark-pink{
+    color: var(--dark-pink);
+}
+.nav .nav-item .text-gradient{
+    background-image: linear-gradient(to left, #D434F3, #903AFF);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.bg-dark-blue{
+    background-color: var(--dark-blue);
+}
+.btn-gradient{
+    background: var(--primary-color);
+    color: white;
+}
+.btn-gradient:hover{
+    background: var(--indigo);
+    color: white;
+}
+.btn-outline-gradient{
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(to left, #D434F3, #903AFF);
+    border-image-slice: 1;
+    color: #ffffff;
+}
+.border-gradient{
+    background: #150e2833;
+    backdrop-filter: blur( 15.5px );
+    -webkit-backdrop-filter: blur( 15.5px );
+    border-radius: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-image: linear-gradient(to right, #D434F3, #903AFF);
+    border-image-slice: 1;
+    color: #ffffff;
+}
+.bg-glassmorphism{
+    background: #fbfbfb0d;
+    backdrop-filter: blur( 2.5px );
+    -webkit-backdrop-filter: blur( 2.5px );
+    border-radius: 10px;
+    border: none;
+}
+.nav-item a{
+    font-size: 14px;
+}
+.small{
+    font-style: italic;
+}
+.input-field{
+    background-color: transparent;
+    color: white;
+}
+.input-field::placeholder{
+    color: rgba(255, 255, 255, 0.473);
+}
+.input-select{
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.411);
+}
+.input-select option{
+    background-color: #150E28;
+    color: white;
+}
+.input-select:focus{
+    outline: none;
+    border-color: #007bff;
+}
+
+
+
+/* Background Star Positioning */
+.grey-star-1{
+    position: absolute;
+    left: 10%;
+    bottom: 5%;
+
+}
+.purple-star-1{
+    position: absolute;
+    left: 9%;
+    top: 15%;
+}
+.grey-star-2{
+    position: absolute;
+    left: 85%;
+    top: 13%;
+}
+.purple-star-2{
+    position: absolute;
+    left: 42%;
+    bottom: 20%;
+}
+.white-star{
+    position: absolute;
+    left: 90%;
+    bottom: 3%;
+
+}
+.purple-flare{
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 99;
+}
+.boy-walking{
+    position: absolute;
+    left: 41%;
+    top: 11.5%;
+}
+.girl-walking{
+    position: absolute;
+    left: 38%;
+    top: 12%; 
+}
+
+/* Modal Image Positioning */
+.green-check{
+    position: absolute;
+    left: 10%;
+    height: 50%;
+}
+.success-man{
+    position: relative;
+    left: 12%;
+}
+.modal-star-1{
+    position: relative;
+    left: 13%;
+    z-index: 1;
+}
+.modal-star-3{
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+@media (max-width: 767px) {
+    .main-body{
+        overflow-y: scroll;
+    }
+    .background {
+        overflow: hidden;
+        display: none;
+    }
+    .bg-glassmorphism{
+        background: none;
+    }
+    .boy-walking{
+        display: none;
+        position: absolute;
+        left: 70%;
+
+    }
+    .girl-walking{
+        display: none;
+        position: absolute;
+        left: 70%;
+        top: ;
+    }
+    .purple-star-1{
+        display: none;
+    }
+    .background span:nth-child(1) {
+        top: 75%;
+        left: -50%;
+    }
+    .background span:nth-child(2) {
+        top: 13%;
+        left: 60%;
+    }
+    /* Hero Section */
+    .hero-section{
+        height: 100vh;
+    }
+    .big-idea{
+        height: 300px;
+        width: 100%;
+    }
+    .unlock-svg{
+        position: absolute;
+        top: 0;
+        width: 73%;
+    }
+    svg{
+        display: none;
+    }
+}

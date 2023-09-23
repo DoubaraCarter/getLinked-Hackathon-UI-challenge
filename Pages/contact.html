@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact || Send us a message</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/custom.css">
+
+</head>
+<body class="bg-dark-blue main-body">
+
+    <div class="background">
+        <span></span>
+        <span></span>
+    </div>
+    <!-- Nav bar -->
+    <div class="container">
+          <header class="d-none d-lg-flex flex-wrap justify-content-center py-3">
+            <a href="../index.html" class="d-flex align-items-center mb-md-0 me-md-auto text-decoration-none text-light fw-bold fs-4">
+              get<span class="text-dark-pink">Linked</span>
+            </a>
+      
+            <ul class="nav nav-pills"">
+              <li class="nav-item"><a href="#" class="nav-link text-light">Timeline</a></li>
+              <li class="nav-item"><a href="#" class="nav-link text-light">Overview</a></li>
+              <li class="nav-item"><a href="#" class="nav-link text-light">FAQs</a></li>
+              <li class="nav-item"><a href="../Pages/contact.html" class="nav-link text-gradient fw-bold">Contact</a></li>
+            </ul>
+
+            
+            <div class="col-md-2 text-end">
+              <button type="button" class="btn btn-gradient me-2 px-5"><a href="./register.html" class="text-decoration-none text-white">Register</a></button>
+            </div>
+          </header>
+    </div>
+    <!-- End of Nav Bar -->
+
+    <!-- Small Screen Nav Bar -->
+    <header class="bg-dark-blue border-bottom d-block d-lg-none position-sticky fixed-top">
+        <div class="collapse" id="navbarHeader">
+          <div class="container border-bottom">
+            <div class="row">
+              <div class="col-sm-4 offset-md-1 py-4">
+                <a href="../index.html" class="text-white text-decoration-none fw-bold">get<span class="text-dark-pink">Linked</span></a>
+                <ul class="list-unstyled">
+                  <li><a href="#" class="text-white text-decoration-none">Timeline</a></li>
+                  <li><a href="#" class="text-white text-decoration-none">Overview</a></li>
+                  <li><a href="#" class="text-white text-decoration-none">FAQ's</a></li>
+                  <li><a href="../Pages/contact.html" class="text-white text-decoration-none">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="navbar">
+          <div class="container">
+            <a href="#" class="navbar-brand d-flex align-items-center">
+              <strong class="d-flex d-lg-none text-dark-pink ms-2 ps-1 fw-bold">Contact</strong>
+            </a>
+            <button class="navbar-toggler btn-gradient" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </div>
+      </header>
+      <!-- End of Snall Screen Nav Bar -->
+
+    <!-- Contact Section -->
+    <div class="container col-xl-10 col-xxl-8 px-4">
+        <div class="row align-items-center g-lg-5 py-5">
+
+            <!-- Contact Information -->
+          <div class="col-lg-7 text-center text-lg-start">
+            <h1 class="fs-2 fw-bold lh-1 text-dark-pink mb-3 d-none d-lg-flex">Get in Touch</h1>
+            <p class="col-lg-2 text-white d-none d-lg-flex">Contact Information</p>
+            <p class="col-lg-3 text-white d-none d-lg-flex">27, Alara Street Yaba 100012 Lagos State</p>
+            <p class="col-lg-10 text-white d-none d-lg-flex">Call us: 07067981819</p>
+            <p class="col-lg-5 text-white d-none d-lg-flex">We are open from Monday-Friday 08:00am - 05:00pm</p>
+            <h4 class="fs-5 fw-bold lh-1 text-dark-pink mb-3 d-none d-lg-flex">Share on</h4>
+            <img src="../images/RegisterPageImages/Social media.svg" class="d-none d-lg-block img-fluid" alt="">
+          </div>
+
+          <!-- Contact Us Form -->
+          <div class="col-md-10 mx-auto col-lg-5">
+            <form class="bg-glassmorphism p-0 p-lg-5 " id="contact-form">
+                <h5 class="fs-5 fw-bold lh-1 text-dark-pink mb-2">Questions or need assistance?</h5>
+                <h5 class="fs-5 fw-bold lh-1 text-dark-pink mb-4">Let us know about it</h5>
+                <small class="mb-3 text-white d-block d-lg-none">Email us below to any question related to our event.</small>
+                <div class="form-floating mb-3 d-flex d-lg-none ">
+                    <input type="text" class="form-control input-field" id="Tname" placeholder="Team's Name">
+                    <label for="Tname" class="text-white">Team's Name</label>
+                </div>
+                <div class="form-floating mb-3 d-flex d-lg-none">
+                    <input type="text" class="form-control input-field" id="tpc" placeholder="Topic">
+                    <label for="tpc" class="text-light">Topic</label>
+                </div>
+                <div class="form-floating mb-3 d-none d-lg-flex">
+                    <input type="text" class="form-control input-field" id="fname" placeholder="First Name">
+                    <label for="fname" class="text-white">First Name</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control input-field" id="mail" placeholder="Mail">
+                    <label for="mail" class="text-white">Mail</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <textarea class="form-control input-field" placeholder="Leave a comment here" id="contactMessage" style="height: 90px;"></textarea>
+                    <label for="floatingTextarea2" class="text-light">Message</label>
+                </div>
+                <div class="d-flex align-items-center justify-content-center">
+                    <button class="w-50 btn btn-gradient" type="submit">Submit</button>
+                </div>
+            </form>
+          </div>
+        </div>
+    </div>
+    <div class="d-flex align-items-center justify-content-center flex-column d-lg-none">
+        <h4 class="fs-5 fw-bold lh-1 text-dark-pink mb-3">Share on</h4>
+        <img src="../images/RegisterPageImages/Social media.svg" class="d-block img-fluid" alt="">
+    </div>
+    <!-- End of Contact Section -->
+
+    <!-- Background Designs -->
+    <img src="../images/RegisterPageImages/star.svg" class="grey-star-1 d-none d-lg-block" alt="">
+    <img src="../images/RegisterPageImages/sata gra.svg" class="purple-star-1" alt="">
+    <img src="../images/RegisterPageImages/star (1).svg" class="white-star" alt="">
+    <img src="../images/RegisterPageImages/star.svg" class="grey-star-2" alt="">
+    <img src="../images/RegisterPageImages/sata gra.svg" class="purple-star-2 d-none d-lg-block" alt="">
+    <!-- End of Background Designs -->
+    
+
+  <script src="../JS/bootstrap.min.js"></script>
+  <script src="../JS/contact.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</body>
+</html>
